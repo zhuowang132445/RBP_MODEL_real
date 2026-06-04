@@ -1,0 +1,98 @@
+{
+  "project": "unified_rbp_model_v1",
+  "work_dir": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1",
+  "storage_policy": "large original/intermediate files are included as symlinks inside this folder",
+  "links": [
+    {
+      "name": "data_sources/motif_model_snapshot",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data_sources/motif_model_snapshot",
+      "source_path": "/public/home/wz/workplace/cursor/modle/snapshots/rbp_motif_model_v6_no_test_time_prior_prototype_20260527",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data_sources/binding_project",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data_sources/binding_project",
+      "source_path": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/motif_train/seq_train.fasta",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/motif_train/seq_train.fasta",
+      "source_path": "/public/home/wz/workplace/cursor/modle/snapshots/rbp_motif_model_v6_no_test_time_prior_prototype_20260527/data/seq_train.fasta",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/motif_train/zscore_train.tsv",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/motif_train/zscore_train.tsv",
+      "source_path": "/public/home/wz/workplace/cursor/modle/snapshots/rbp_motif_model_v6_no_test_time_prior_prototype_20260527/data/zscore_train.tsv",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/motif_train/rnacompete_metadata_eupri.tsv",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/motif_train/rnacompete_metadata_eupri.tsv",
+      "source_path": "/public/home/wz/workplace/cursor/modle/snapshots/rbp_motif_model_v6_no_test_time_prior_prototype_20260527/data/rnacompete_metadata_eupri.tsv",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/binding_train/experiment_holdout_split",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/binding_train/experiment_holdout_split",
+      "source_path": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/07_training_data/window_dataset_top1000_strict_fixed/split_by_experiment_accession",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/binding_train/rnafold_structure_cache",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/binding_train/rnafold_structure_cache",
+      "source_path": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/07_training_data/window_dataset_top1000_strict_fixed/structure_features/rnafold_pf_paired_probability_split_by_experiment_accession",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/binding_train/protein_embeddings.npy",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/binding_train/protein_embeddings.npy",
+      "source_path": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/08_embeddings/esm2_t33_650M_strict_fixed/protein_embeddings.npy",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/binding_train/protein_embedding_index.tsv",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/binding_train/protein_embedding_index.tsv",
+      "source_path": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/08_embeddings/esm2_t33_650M_strict_fixed/protein_embedding_index.tsv",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/stage1_validation/fusion_v2_window_features.tsv.gz",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/stage1_validation/fusion_v2_window_features.tsv.gz",
+      "source_path": "/public/home/wz/workplace/cursor/modle/fusion_v2/cache/fusion_v2_window_features.tsv.gz",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/stage1_validation/rbp_features.json",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/stage1_validation/rbp_features.json",
+      "source_path": "/public/home/wz/workplace/cursor/modle/fusion_v2/cache/rbp_features.json",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/checkpoints/motif_v6_1.pth",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/checkpoints/motif_v6_1.pth",
+      "source_path": "/public/home/wz/workplace/cursor/modle/snapshots/rbp_motif_model_v6_no_test_time_prior_prototype_20260527/checkpoints/v6_1_seed_rank_conditioned_model.pth",
+      "exists": true,
+      "is_symlink": true
+    },
+    {
+      "name": "data/checkpoints/binding_cnn_best_model.pt",
+      "path_in_project": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/checkpoints/binding_cnn_best_model.pt",
+      "source_path": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/09_models/rbp_binding_cnn_esm2_t33_650M_strict_fixed/best_model.pt",
+      "exists": true,
+      "is_symlink": true
+    }
+  ]
+}
