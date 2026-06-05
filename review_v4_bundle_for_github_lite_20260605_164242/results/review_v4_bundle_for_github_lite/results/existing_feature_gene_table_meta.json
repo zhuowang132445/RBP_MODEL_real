@@ -1,0 +1,30 @@
+{
+  "n_genes": 55382,
+  "window_chunksize": 200000,
+  "target_top3_windows": 164668,
+  "matched_structure_keys": 164668,
+  "missing_structure_keys": 0,
+  "duplicate_structure_keys": 0,
+  "selected_urich_kmers": [
+    "CUUUUUU",
+    "UUUUUUU",
+    "UUUUUUC",
+    "CCUUUUU",
+    "UUUUUCU",
+    "UGUUUGU",
+    "UUUUUCG",
+    "UUUCUUU",
+    "UUUUCUU",
+    "UCUUUUU",
+    "CUUUUCU",
+    "ACUUUUU",
+    "AUUUUUU",
+    "CUUUCUU",
+    "CUUUUUC",
+    "ACCUUUU",
+    "UUUUCCU",
+    "GUUUUUU",
+    "UACUUUU",
+    "UUUUUGU"
+  ]
+}
