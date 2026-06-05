@@ -1,0 +1,40 @@
+Loading weights:   0%|          | 0/515 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 300/515 [00:00<00:00, 2940.02it/s]Loading weights: 100%|██████████| 515/515 [00:00<00:00, 2668.75it/s]
+[1mEsmModel LOAD REPORT[0m from: facebook/esm2_t30_150M_UR50D
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.layer_norm.weight   | UNEXPECTED | 
+esm.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+pooler.dense.bias           | MISSING    | 
+pooler.dense.weight         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"epoch": 1, "stage": "joint", "motif_loss": 0.15571629313322213, "binding_loss": 0.41010004305839537, "motif_pearson": 0.7481366581313574, "auc": 0.9323097056170631, "auprc": 0.9392356306899127}
+{"epoch": 2, "stage": "joint", "motif_loss": 0.15445157799583215, "binding_loss": 0.4099906869530678, "motif_pearson": 0.7510381725703629, "auc": 0.9327891360099229, "auprc": 0.9395729638851615}
+{"epoch": 3, "stage": "joint", "motif_loss": 0.15408294647932053, "binding_loss": 0.40909936040639877, "motif_pearson": 0.7529545018088862, "auc": 0.9329466007341145, "auprc": 0.9397487285261351}
+{"epoch": 4, "stage": "joint", "motif_loss": 0.15315397886129525, "binding_loss": 0.41085375887155534, "motif_pearson": 0.7516521877706778, "auc": 0.9330571387471063, "auprc": 0.9398573638144807}
+{"epoch": 5, "stage": "joint", "motif_loss": 0.1529333803516168, "binding_loss": 0.40840039920806886, "motif_pearson": 0.7513960197011442, "auc": 0.9327944049686303, "auprc": 0.9396484009499724}
+{"epoch": 6, "stage": "joint", "motif_loss": 0.15211003703566697, "binding_loss": 0.41120001500844955, "motif_pearson": 0.7564823706171375, "auc": 0.9329345514836078, "auprc": 0.93972755899808}
+{"epoch": 7, "stage": "joint", "motif_loss": 0.15355676871079665, "binding_loss": 0.40903711986541746, "motif_pearson": 0.747728750721022, "auc": 0.9329683819467831, "auprc": 0.93971830155293}
+{"epoch": 8, "stage": "joint", "motif_loss": 0.1511415635737089, "binding_loss": 0.4091963481903076, "motif_pearson": 0.7540009669047107, "auc": 0.9330072233408415, "auprc": 0.9397743592691824}
+{"epoch": 9, "stage": "joint", "motif_loss": 0.1511083718102712, "binding_loss": 0.41106823843717577, "motif_pearson": 0.753302986081813, "auc": 0.9332262944982649, "auprc": 0.9399794260818718}
+{"epoch": 10, "stage": "joint", "motif_loss": 0.1511781674164992, "binding_loss": 0.4076468348503113, "motif_pearson": 0.7551703293167571, "auc": 0.9329872309556855, "auprc": 0.939731067960369}
+{
+  "status": "completed",
+  "stage": "joint",
+  "checkpoint": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/checkpoints/unified_original_logic_model_joint.pt",
+  "last_metrics": {
+    "epoch": 10,
+    "stage": "joint",
+    "motif_loss": 0.1511781674164992,
+    "binding_loss": 0.4076468348503113,
+    "motif_pearson": 0.7551703293167571,
+    "auc": 0.9329872309556855,
+    "auprc": 0.939731067960369
+  }
+}

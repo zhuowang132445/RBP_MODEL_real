@@ -1,0 +1,13 @@
+{
+  "rbp_id": "LOC_Os05g24160.1",
+  "gene_scores_tsv": "results/rice_transcriptome_osdrb_posthoc_struct/gene_scores.tsv",
+  "truth_gene_list": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/11_rice_prediction/validation_tribe_osdrb1/results/tribe_msu_genes.tsv",
+  "ranking_score_col": "max_score",
+  "top_k": 1000,
+  "n_gene_scores": 55382,
+  "n_truth_genes_total": 284,
+  "top_k_true_positive_count": 7,
+  "top_k_false_positive_count": 993,
+  "true_targets_outside_top_k_count": 276,
+  "audit_tsv": "results/false_positive_audit_tmp/osdrb1_false_positive_audit.tsv"
+}

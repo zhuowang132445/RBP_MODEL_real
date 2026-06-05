@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "out_dir": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/multitask",
+  "n_motif_profiles": 348,
+  "n_kmers": 16384,
+  "motif_profile_ids": [
+    "RNCMPT00001",
+    "RNCMPT00002",
+    "RNCMPT00003",
+    "RNCMPT00004",
+    "RNCMPT00005"
+  ],
+  "n_clip_proteins": 264,
+  "n_clip_proteins_with_sequence": 264,
+  "missing_sequence_count": 0,
+  "missing_sequence_examples": [],
+  "split_dir": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/07_training_data/window_dataset_top1000_strict_fixed/split_by_experiment_accession",
+  "sequence_cache_dir": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/09_models/rbp_binding_cnn_esm2_t33_650M_strict_fixed_experiment_holdout/cache",
+  "structure_cache_dir": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/07_training_data/window_dataset_top1000_strict_fixed/structure_features/rnafold_pf_paired_probability_split_by_experiment_accession"
+}

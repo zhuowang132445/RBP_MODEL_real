@@ -1,0 +1,39 @@
+Loading weights:   0%|          | 0/515 [00:00<?, ?it/s]Loading weights:  71%|███████▏  | 368/515 [00:00<00:00, 3605.23it/s]Loading weights: 100%|██████████| 515/515 [00:00<00:00, 3330.40it/s]
+[1mEsmModel LOAD REPORT[0m from: facebook/esm2_t30_150M_UR50D
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+esm.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+pooler.dense.bias           | MISSING    | 
+pooler.dense.weight         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"epoch": 1, "stage": "binding", "binding_loss": 0.4073919739723206, "auc": 0.9401929447943638, "auprc": 0.9457047026407606}
+{"epoch": 2, "stage": "binding", "binding_loss": 0.4058447306752205, "auc": 0.9401037784321242, "auprc": 0.9455601475722041}
+{"epoch": 3, "stage": "binding", "binding_loss": 0.4042397258281708, "auc": 0.9399977400655913, "auprc": 0.9454877239265781}
+{"epoch": 4, "stage": "binding", "binding_loss": 0.40547645384073255, "auc": 0.9400274268156598, "auprc": 0.9455436193450211}
+{"epoch": 5, "stage": "binding", "binding_loss": 0.4046660358905792, "auc": 0.940006507667845, "auprc": 0.9454994907944048}
+{"epoch": 6, "stage": "binding", "binding_loss": 0.40345674628019335, "auc": 0.9399405535039442, "auprc": 0.9454700454143333}
+{"epoch": 7, "stage": "binding", "binding_loss": 0.400375651538372, "auc": 0.9399387494085133, "auprc": 0.9454912990874756}
+{"epoch": 8, "stage": "binding", "binding_loss": 0.4010205593705177, "auc": 0.9397577594936514, "auprc": 0.9452949958981602}
+{"epoch": 9, "stage": "binding", "binding_loss": 0.4019221610426903, "auc": 0.940053463197241, "auprc": 0.9456127850845563}
+{"epoch": 10, "stage": "binding", "binding_loss": 0.39950972467660906, "auc": 0.9400100273047791, "auprc": 0.9455404703681363}
+{
+  "status": "completed",
+  "stage": "binding",
+  "binding_score_mode": "base",
+  "checkpoint": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/checkpoints/unified_original_logic_model_binding.pt",
+  "last_metrics": {
+    "epoch": 10,
+    "stage": "binding",
+    "binding_loss": 0.39950972467660906,
+    "auc": 0.9400100273047791,
+    "auprc": 0.9455404703681363
+  }
+}

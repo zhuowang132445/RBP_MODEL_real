@@ -1,0 +1,7 @@
+Relevant prediction/audit logs were not consistently persisted as standalone .log files.
+This bundle includes the available training/build logs plus run_commands_used.sh for exact commands.
+Generated during bundling:
+- results/trainable_parameter_report.tsv
+- results/coordinate_alignment_report.json
+- results/false_positive_audit.tsv
+- results/gene_ranking_bias_report.tsv

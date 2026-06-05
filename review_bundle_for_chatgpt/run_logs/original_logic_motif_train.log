@@ -1,0 +1,38 @@
+Loading weights:   0%|          | 0/515 [00:00<?, ?it/s]Loading weights:  76%|███████▌  | 390/515 [00:00<00:00, 3807.09it/s]Loading weights: 100%|██████████| 515/515 [00:00<00:00, 2777.95it/s]
+[1mEsmModel LOAD REPORT[0m from: facebook/esm2_t30_150M_UR50D
+Key                         | Status     | 
+----------------------------+------------+-
+esm.embeddings.position_ids | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+pooler.dense.weight         | MISSING    | 
+pooler.dense.bias           | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"epoch": 1, "stage": "motif", "motif_loss": 0.1985506441157598, "motif_pearson": 0.7405588709593839}
+{"epoch": 2, "stage": "motif", "motif_loss": 0.188426445883054, "motif_pearson": 0.7183930756191352}
+{"epoch": 3, "stage": "motif", "motif_loss": 0.1783769136438003, "motif_pearson": 0.724059268951019}
+{"epoch": 4, "stage": "motif", "motif_loss": 0.17432343157438132, "motif_pearson": 0.7257202339912516}
+{"epoch": 5, "stage": "motif", "motif_loss": 0.16930454711501414, "motif_pearson": 0.7325887094471801}
+{"epoch": 6, "stage": "motif", "motif_loss": 0.16497796430037573, "motif_pearson": 0.7411062928353476}
+{"epoch": 7, "stage": "motif", "motif_loss": 0.16096639948395583, "motif_pearson": 0.741404676329763}
+{"epoch": 8, "stage": "motif", "motif_loss": 0.15637067676736757, "motif_pearson": 0.7513030496744617}
+{"epoch": 9, "stage": "motif", "motif_loss": 0.15924833285120818, "motif_pearson": 0.7409283401689802}
+{"epoch": 10, "stage": "motif", "motif_loss": 0.15896434222276395, "motif_pearson": 0.7417377504645141}
+{
+  "status": "completed",
+  "stage": "motif",
+  "binding_score_mode": null,
+  "checkpoint": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/checkpoints/unified_original_logic_model_motif.pt",
+  "last_metrics": {
+    "epoch": 10,
+    "stage": "motif",
+    "motif_loss": 0.15896434222276395,
+    "motif_pearson": 0.7417377504645141
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "project_root": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1",
+  "kingdom_label_audit": {
+    "samples": {
+      "Viridiplantae": 1,
+      "Fungi": 2,
+      "Metazoa": 0,
+      "Unknown": 3,
+      "ARATH_query": 1,
+      "ORYSJ_query": 1,
+      "DROME_query": 0
+    },
+    "predict_parser_default_line": "parser.add_argument(\"--auto-teacher-query-kingdom-label\", type=int, default=2)",
+    "auto_teacher_default_line": "query_kingdom_label: int = 2,",
+    "findings": [
+      "predict parser default auto-teacher kingdom label is 2, not 1 for plants",
+      "unified_auto_teacher default query_kingdom_label is 2, not 1 for plants"
+    ]
+  },
+  "motif_embedding_alignment_audit": {
+    "summary": {
+      "binding_embedding_row_unique": true,
+      "binding_embedding_row_contiguous": true,
+      "motif_train_embedding_row_unique": true,
+      "motif_train_embedding_row_contiguous": true,
+      "binding_n_rows": 264,
+      "motif_train_n_rows": 264,
+      "all_protein_id_match": true,
+      "all_embedding_row_match": true,
+      "rows_with_any_issue": 0,
+      "binding_dataset_self_motif_indexing_safe": true,
+      "binding_dataset_note": "BindingDataset uses self.motif[prow]; this is safe only if music_clip_train rows are exactly aligned to binding embedding_row order."
+    },
+    "protein_rows_findings": {
+      "train": {
+        "n_unique_rows": 202,
+        "min_row": 0,
+        "max_row": 263,
+        "out_of_range_rows": 0,
+        "missing_in_motif_by_row": 0,
+        "protein_id_mismatch_at_same_row": 0
+      },
+      "val": {
+        "n_unique_rows": 96,
+        "min_row": 0,
+        "max_row": 263,
+        "out_of_range_rows": 0,
+        "missing_in_motif_by_row": 0,
+        "protein_id_mismatch_at_same_row": 0
+      },
+      "test": {
+        "n_unique_rows": 99,
+        "min_row": 0,
+        "max_row": 263,
+        "out_of_range_rows": 0,
+        "missing_in_motif_by_row": 0,
+        "protein_id_mismatch_at_same_row": 0
+      }
+    },
+    "alignment_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/alignment_audit.tsv"
+  },
+  "prediction_structure_cache_audit": [
+    {
+      "asset": "arabidopsis_tair10",
+      "window_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/arabidopsis_tair10/input/tair10_windows_w200_s50.tsv.gz",
+      "structure_npy": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/arabidopsis_tair10/structure_cache/transcriptome.paired_probability.npy",
+      "structure_meta": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/arabidopsis_tair10/structure_cache/transcriptome.structure_meta.json",
+      "window_rows": 1608012,
+      "structure_rows": 1608012,
+      "rna_len_window_meta": 200,
+      "structure_width": 200,
+      "row_count_match": true,
+      "row_order_hash_match": true,
+      "duplicate_key_count": 0,
+      "duplicate_key_with_same_seqhash_count": 0,
+      "matched_rows_inferred": 1608012,
+      "unmatched_rows_inferred": 0,
+      "window_start_min": 1,
+      "window_start_max": 16394,
+      "window_coordinates_look_1_based": true,
+      "window_lengths_match_meta": true
+    },
+    {
+      "asset": "rice_v7",
+      "window_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/input/rice_v7_windows_w200_s50.tsv.gz",
+      "structure_npy": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/structure_cache/transcriptome.paired_probability.npy",
+      "structure_meta": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/structure_cache/transcriptome.structure_meta.json",
+      "window_rows": 2099265,
+      "structure_rows": 2099265,
+      "rna_len_window_meta": 200,
+      "structure_width": 200,
+      "row_count_match": true,
+      "row_order_hash_match": true,
+      "duplicate_key_count": 0,
+      "duplicate_key_with_same_seqhash_count": 0,
+      "matched_rows_inferred": 2099265,
+      "unmatched_rows_inferred": 0,
+      "window_start_min": 1,
+      "window_start_max": 16112,
+      "window_coordinates_look_1_based": true,
+      "window_lengths_match_meta": true
+    }
+  ],
+  "coordinate_offset_audit": {
+    "observed_direct_match": 0,
+    "observed_plus1_match": 446,
+    "background_direct_match": 0,
+    "background_plus1_match": 9653
+  },
+  "kmer_normalization_audit": {
+    "n_kmers": 16384,
+    "contains_lowercase_before_normalization": false,
+    "contains_T_before_normalization": false,
+    "all_uppercase_rna_after_normalization": true,
+    "all_acgu_after_normalization": true,
+    "bad_chars_after_normalization": [],
+    "example_before": [
+      "AAAAAAA",
+      "AAAAAAC",
+      "AAAAAAG",
+      "AAAAAAU",
+      "AAAAACA"
+    ],
+    "example_after": [
+      "AAAAAAA",
+      "AAAAAAC",
+      "AAAAAAG",
+      "AAAAAAU",
+      "AAAAACA"
+    ]
+  },
+  "gene_ranking_bias_audit": [
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/arabidopsis_transcriptome_atgrp7_atgrp8_osdrb_posthoc_struct/gene_scores.tsv",
+      "result_dir": "arabidopsis_transcriptome_atgrp7_atgrp8_osdrb_posthoc_struct",
+      "rbp_id": "AtGRP7",
+      "n_rows": 27339,
+      "pearson_nwindows_max_score": 0.17662685332017988,
+      "pearson_nwindows_top3": 0.2119459520992908,
+      "pearson_nwindows_top5": 0.24732013056604918,
+      "spearman_nwindows_max_score": 0.39195959867055047,
+      "spearman_nwindows_top3": 0.4848726580470265,
+      "spearman_nwindows_top5": 0.5720327618077687,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/arabidopsis_transcriptome_atgrp7_atgrp8_osdrb_posthoc_struct/gene_scores.tsv",
+      "result_dir": "arabidopsis_transcriptome_atgrp7_atgrp8_osdrb_posthoc_struct",
+      "rbp_id": "AtGRP8",
+      "n_rows": 27339,
+      "pearson_nwindows_max_score": 0.1424542890546487,
+      "pearson_nwindows_top3": 0.173981287391762,
+      "pearson_nwindows_top5": 0.20738729653851368,
+      "spearman_nwindows_max_score": 0.3765101286137041,
+      "spearman_nwindows_top3": 0.471561055553086,
+      "spearman_nwindows_top5": 0.5642424509498687,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/arabidopsis_transcriptome_atgrp7_atgrp8_osdrb_posthoc_struct/gene_scores.tsv",
+      "result_dir": "arabidopsis_transcriptome_atgrp7_atgrp8_osdrb_posthoc_struct",
+      "rbp_id": "LOC_Os05g24160.1",
+      "n_rows": 27339,
+      "pearson_nwindows_max_score": 0.21404253161005182,
+      "pearson_nwindows_top3": 0.25710842767243736,
+      "pearson_nwindows_top5": 0.29416147347296057,
+      "spearman_nwindows_max_score": 0.4044845707492486,
+      "spearman_nwindows_top3": 0.5178517761518658,
+      "spearman_nwindows_top5": 0.6037668077099787,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_binding_ckpt/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_binding_ckpt",
+      "rbp_id": "AtGRP7",
+      "n_rows": 824,
+      "pearson_nwindows_max_score": 0.0989892012441104,
+      "pearson_nwindows_top3": 0.12435034080337268,
+      "pearson_nwindows_top5": 0.14068649359112728,
+      "spearman_nwindows_max_score": 0.26431918358122697,
+      "spearman_nwindows_top3": 0.34184231415338034,
+      "spearman_nwindows_top5": 0.3827728964722836,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_binding_ckpt/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_binding_ckpt",
+      "rbp_id": "AtGRP8",
+      "n_rows": 435,
+      "pearson_nwindows_max_score": 0.112253584260436,
+      "pearson_nwindows_top3": 0.14456615373895487,
+      "pearson_nwindows_top5": 0.161765796582067,
+      "spearman_nwindows_max_score": 0.36617692159476084,
+      "spearman_nwindows_top3": 0.46966302740179516,
+      "spearman_nwindows_top5": 0.49569012592002076,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_joint/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_joint",
+      "rbp_id": "AtGRP7",
+      "n_rows": 824,
+      "pearson_nwindows_max_score": 0.09826385623963614,
+      "pearson_nwindows_top3": 0.12446023267859543,
+      "pearson_nwindows_top5": 0.14111819947632623,
+      "spearman_nwindows_max_score": 0.26768030707718743,
+      "spearman_nwindows_top3": 0.34472311561820423,
+      "spearman_nwindows_top5": 0.3872847900448444,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_joint/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_joint",
+      "rbp_id": "AtGRP8",
+      "n_rows": 435,
+      "pearson_nwindows_max_score": 0.11168314975098328,
+      "pearson_nwindows_top3": 0.14511487487287214,
+      "pearson_nwindows_top5": 0.16194163536812847,
+      "spearman_nwindows_max_score": 0.3663023622330533,
+      "spearman_nwindows_top3": 0.46954558268723007,
+      "spearman_nwindows_top5": 0.49419239404164816,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_joint_ckpt/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_joint_ckpt",
+      "rbp_id": "AtGRP7",
+      "n_rows": 824,
+      "pearson_nwindows_max_score": 0.09826385623963614,
+      "pearson_nwindows_top3": 0.12446023267859543,
+      "pearson_nwindows_top5": 0.14111819947632623,
+      "spearman_nwindows_max_score": 0.26768030707718743,
+      "spearman_nwindows_top3": 0.34472311561820423,
+      "spearman_nwindows_top5": 0.3872847900448444,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_joint_ckpt/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_joint_ckpt",
+      "rbp_id": "AtGRP8",
+      "n_rows": 435,
+      "pearson_nwindows_max_score": 0.11168314975098328,
+      "pearson_nwindows_top3": 0.14511487487287214,
+      "pearson_nwindows_top5": 0.16194163536812847,
+      "spearman_nwindows_max_score": 0.3663023622330533,
+      "spearman_nwindows_top3": 0.46954558268723007,
+      "spearman_nwindows_top5": 0.49419239404164816,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_motif_ckpt/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_motif_ckpt",
+      "rbp_id": "AtGRP7",
+      "n_rows": 824,
+      "pearson_nwindows_max_score": 0.10219680544764549,
+      "pearson_nwindows_top3": 0.12909907904242204,
+      "pearson_nwindows_top5": 0.14512445184515393,
+      "spearman_nwindows_max_score": 0.2594056805975959,
+      "spearman_nwindows_top3": 0.33740174042338605,
+      "spearman_nwindows_top5": 0.3816205157008329,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_motif_ckpt/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_motif_ckpt",
+      "rbp_id": "AtGRP8",
+      "n_rows": 435,
+      "pearson_nwindows_max_score": 0.1011308362803723,
+      "pearson_nwindows_top3": 0.1382405516646062,
+      "pearson_nwindows_top5": 0.1581536859622673,
+      "spearman_nwindows_max_score": 0.3541461502905222,
+      "spearman_nwindows_top3": 0.466596994116373,
+      "spearman_nwindows_top5": 0.49639075956699813,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_posthoc_motif_binding/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_posthoc_motif_binding",
+      "rbp_id": "AtGRP7",
+      "n_rows": 824,
+      "pearson_nwindows_max_score": 0.0969124334527237,
+      "pearson_nwindows_top3": 0.11897778255770584,
+      "pearson_nwindows_top5": 0.13379903876821253,
+      "spearman_nwindows_max_score": 0.2100440833888807,
+      "spearman_nwindows_top3": 0.29516632525846836,
+      "spearman_nwindows_top5": 0.34375065731275795,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_atgrp7_atgrp8_posthoc_motif_binding/gene_scores.tsv",
+      "result_dir": "predict_atgrp7_atgrp8_posthoc_motif_binding",
+      "rbp_id": "AtGRP8",
+      "n_rows": 435,
+      "pearson_nwindows_max_score": 0.1048069180402717,
+      "pearson_nwindows_top3": 0.14206298058561528,
+      "pearson_nwindows_top5": 0.1625700025587762,
+      "spearman_nwindows_max_score": 0.3515522303831232,
+      "spearman_nwindows_top3": 0.46475690465968994,
+      "spearman_nwindows_top5": 0.49871654637229784,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_osdrb1_binding_ckpt/gene_scores.tsv",
+      "result_dir": "predict_osdrb1_binding_ckpt",
+      "rbp_id": "LOC_Os05g24160.1",
+      "n_rows": 193,
+      "pearson_nwindows_max_score": 0.05374180603410022,
+      "pearson_nwindows_top3": 0.11764371279461812,
+      "pearson_nwindows_top5": 0.14592853946777395,
+      "spearman_nwindows_max_score": -0.045098872099422795,
+      "spearman_nwindows_top3": 0.06008159102151427,
+      "spearman_nwindows_top5": 0.06827045745591045,
+      "max_score_bias_flag": false
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_osdrb1_joint/gene_scores.tsv",
+      "result_dir": "predict_osdrb1_joint",
+      "rbp_id": "LOC_Os05g24160.1",
+      "n_rows": 193,
+      "pearson_nwindows_max_score": 0.049818573136020144,
+      "pearson_nwindows_top3": 0.11013609275929186,
+      "pearson_nwindows_top5": 0.1368506091398336,
+      "spearman_nwindows_max_score": -0.05547849355494033,
+      "spearman_nwindows_top3": 0.04518499514693617,
+      "spearman_nwindows_top5": 0.05481911397241609,
+      "max_score_bias_flag": false
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_osdrb1_joint_ckpt/gene_scores.tsv",
+      "result_dir": "predict_osdrb1_joint_ckpt",
+      "rbp_id": "LOC_Os05g24160.1",
+      "n_rows": 193,
+      "pearson_nwindows_max_score": 0.049818573136020144,
+      "pearson_nwindows_top3": 0.11013609275929186,
+      "pearson_nwindows_top5": 0.1368506091398336,
+      "spearman_nwindows_max_score": -0.05547849355494033,
+      "spearman_nwindows_top3": 0.04518499514693617,
+      "spearman_nwindows_top5": 0.05481911397241609,
+      "max_score_bias_flag": false
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_osdrb1_motif_ckpt/gene_scores.tsv",
+      "result_dir": "predict_osdrb1_motif_ckpt",
+      "rbp_id": "LOC_Os05g24160.1",
+      "n_rows": 193,
+      "pearson_nwindows_max_score": 0.1240479119353594,
+      "pearson_nwindows_top3": 0.1713563347676871,
+      "pearson_nwindows_top5": 0.2090033090348665,
+      "spearman_nwindows_max_score": 0.06786585855561328,
+      "spearman_nwindows_top3": 0.11361155062646461,
+      "spearman_nwindows_top5": 0.1230608637458221,
+      "max_score_bias_flag": false
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/predict_osdrb1_posthoc_motif_binding/gene_scores.tsv",
+      "result_dir": "predict_osdrb1_posthoc_motif_binding",
+      "rbp_id": "LOC_Os05g24160.1",
+      "n_rows": 193,
+      "pearson_nwindows_max_score": 0.14167735648177276,
+      "pearson_nwindows_top3": 0.26128181247947313,
+      "pearson_nwindows_top5": 0.31894120484798466,
+      "spearman_nwindows_max_score": 0.07938750750576122,
+      "spearman_nwindows_top3": 0.22275546816317318,
+      "spearman_nwindows_top5": 0.22669290624167504,
+      "max_score_bias_flag": false
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/rice_transcriptome_atgrp7_atgrp8_osdrb_posthoc_v6_faithful/gene_scores.tsv",
+      "result_dir": "rice_transcriptome_atgrp7_atgrp8_osdrb_posthoc_v6_faithful",
+      "rbp_id": "AtGRP7",
+      "n_rows": 55382,
+      "pearson_nwindows_max_score": 0.29037320925874033,
+      "pearson_nwindows_top3": 0.3355109485909207,
+      "pearson_nwindows_top5": 0.3745733657869554,
+      "spearman_nwindows_max_score": 0.5185413920547516,
+      "spearman_nwindows_top3": 0.5866443478832578,
+      "spearman_nwindows_top5": 0.6392229666484144,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/rice_transcriptome_atgrp7_atgrp8_osdrb_posthoc_v6_faithful/gene_scores.tsv",
+      "result_dir": "rice_transcriptome_atgrp7_atgrp8_osdrb_posthoc_v6_faithful",
+      "rbp_id": "AtGRP8",
+      "n_rows": 55382,
+      "pearson_nwindows_max_score": 0.21250593320753122,
+      "pearson_nwindows_top3": 0.25542483601285504,
+      "pearson_nwindows_top5": 0.2926074928220618,
+      "spearman_nwindows_max_score": 0.47875074547248797,
+      "spearman_nwindows_top3": 0.5463156562520333,
+      "spearman_nwindows_top5": 0.6005853526086472,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/rice_transcriptome_atgrp7_atgrp8_osdrb_posthoc_v6_faithful/gene_scores.tsv",
+      "result_dir": "rice_transcriptome_atgrp7_atgrp8_osdrb_posthoc_v6_faithful",
+      "rbp_id": "LOC_Os05g24160.1",
+      "n_rows": 55382,
+      "pearson_nwindows_max_score": 0.3592765284351318,
+      "pearson_nwindows_top3": 0.3996344586684834,
+      "pearson_nwindows_top5": 0.4323110197853816,
+      "spearman_nwindows_max_score": 0.5440023490215224,
+      "spearman_nwindows_top3": 0.6168475581526102,
+      "spearman_nwindows_top5": 0.6677678573009902,
+      "max_score_bias_flag": true
+    },
+    {
+      "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/rice_transcriptome_osdrb_posthoc_struct/gene_scores.tsv",
+      "result_dir": "rice_transcriptome_osdrb_posthoc_struct",
+      "rbp_id": "LOC_Os05g24160.1",
+      "n_rows": 55382,
+      "pearson_nwindows_max_score": 0.32763748697098083,
+      "pearson_nwindows_top3": 0.36826165353702217,
+      "pearson_nwindows_top5": 0.3997820975598417,
+      "spearman_nwindows_max_score": 0.529548362013349,
+      "spearman_nwindows_top3": 0.6053735786710422,
+      "spearman_nwindows_top5": 0.6552960684740918,
+      "max_score_bias_flag": true
+    }
+  ],
+  "trainability_audit": {
+    "binding": {
+      "trainable_parameter_count": 1677762,
+      "trainable_prefix_counts": {
+        "binding_model": 37,
+        "motif_aware_classifier": 8,
+        "motif_binding_projector": 4
+      },
+      "trainable_prefix_numel": {
+        "binding_model": 1485889,
+        "motif_aware_classifier": 181121,
+        "motif_binding_projector": 10752
+      },
+      "binding_model_any_trainable": true,
+      "binding_model_protein_embedding_trainable": true,
+      "motif_esm_any_trainable": false
+    },
+    "late_fusion": {
+      "trainable_parameter_count": 1677762,
+      "trainable_prefix_counts": {
+        "binding_model": 37,
+        "motif_aware_classifier": 8,
+        "motif_binding_projector": 4
+      },
+      "trainable_prefix_numel": {
+        "binding_model": 1485889,
+        "motif_aware_classifier": 181121,
+        "motif_binding_projector": 10752
+      },
+      "binding_model_any_trainable": true,
+      "binding_model_protein_embedding_trainable": true,
+      "motif_esm_any_trainable": false
+    },
+    "joint": {
+      "trainable_parameter_count": 5615888,
+      "trainable_prefix_counts": {
+        "binding_model": 37,
+        "motif_aware_classifier": 8,
+        "motif_binding_projector": 4,
+        "motif_conflict_classifier": 6,
+        "motif_group_classifier": 6,
+        "motif_group_latent_prototypes": 1,
+        "motif_model": 40,
+        "motif_rescue_latent_head": 6
+      },
+      "trainable_prefix_numel": {
+        "binding_model": 1485889,
+        "motif_aware_classifier": 181121,
+        "motif_binding_projector": 10752,
+        "motif_conflict_classifier": 2721,
+        "motif_group_classifier": 5506,
+        "motif_group_latent_prototypes": 128,
+        "motif_model": 3910763,
+        "motif_rescue_latent_head": 19008
+      },
+      "binding_model_any_trainable": true,
+      "binding_model_protein_embedding_trainable": true,
+      "motif_esm_any_trainable": false
+    }
+  }
+}

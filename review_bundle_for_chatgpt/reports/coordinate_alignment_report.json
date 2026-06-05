@@ -1,0 +1,28 @@
+{
+  "window_tsv": "data/prediction_assets/rice_v7/input/rice_v7_windows_w200_s50.tsv.gz",
+  "reference_window_count": 2099265,
+  "reference_duplicate_key_count": 0,
+  "observed": {
+    "validation_tsv": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/11_rice_prediction/validation_hice_window_osdrb1_matched/hice_centered_observed_scores.tsv",
+    "direct_match": 0,
+    "plus1_match": 446,
+    "selected_offset": 1,
+    "match_rate": 1.0,
+    "matched_count": 446,
+    "unmatched_count": 0,
+    "duplicate_key_count": 517,
+    "total_validation_keys": 446
+  },
+  "background": {
+    "validation_tsv": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/11_rice_prediction/validation_hice_window_osdrb1_matched/hice_same_transcript_background_scores.tsv.gz",
+    "direct_match": 0,
+    "plus1_match": 9653,
+    "selected_offset": 1,
+    "match_rate": 1.0,
+    "matched_count": 9653,
+    "unmatched_count": 0,
+    "duplicate_key_count": 30690,
+    "total_validation_keys": 9653
+  },
+  "coordinate_alignment_report_tsv": "results/coordinate_alignment_tmp/coordinate_alignment_report.tsv"
+}

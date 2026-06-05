@@ -1,0 +1,18 @@
+{
+  "mode": "transcriptome_windows",
+  "transcript_fasta": "data/transcripts_gff/Arabidopsis_thaliana.TAIR10.cdna.all.fa.gz",
+  "transcript_fasta_sha256": "1b5dd9df05e900afc382bd5468bb2c840e319aaef18a2287564fd330229597a7",
+  "window_size": 200,
+  "stride": 50,
+  "max_transcripts": null,
+  "transcripts_seen": 48359,
+  "transcripts_scored": 48037,
+  "short_transcripts_skipped": 322,
+  "n_rows": 1608012,
+  "rna_len": 200,
+  "dtype": "float16",
+  "method": "viennarna_rnafold_pf_paired_probability",
+  "feature_file": "data/prediction_assets/arabidopsis_tair10/structure_cache/transcriptome.paired_probability.npy",
+  "rna_row_order_sha256": "98d4cab7d0e73bdb07f681db2beddb0151bdd926dbddc1b365432e0aad94c8d0",
+  "row_order_fingerprint_provenance": "native_structure_writer_input_order"
+}

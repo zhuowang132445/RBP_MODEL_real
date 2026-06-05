@@ -1,0 +1,17 @@
+{
+  "mode": "transcriptome_windows",
+  "transcript_fasta": "/public/home/wz/workplace/cursor/random_30nt/rice_v7_transcripts.fa",
+  "window_size": 200,
+  "stride": 50,
+  "max_transcripts": null,
+  "transcripts_seen": 66338,
+  "transcripts_scored": 65734,
+  "short_transcripts_skipped": 604,
+  "n_rows": 2099265,
+  "rna_len": 200,
+  "dtype": "float16",
+  "method": "viennarna_rnafold_pf_paired_probability",
+  "feature_file": "11_rice_prediction/structure_cache/rice_v7_stride50_rnafold_pf_paired_probability/transcriptome.paired_probability.npy",
+  "rna_row_order_sha256": "0b85017d4bcaa7e8d0d96cb7a9f54ba93f45f34ad6835282d09f54473ce97304",
+  "row_order_fingerprint_provenance": "native_structure_writer_input_order"
+}

@@ -1,0 +1,28 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/515 [00:00<?, ?it/s]Loading weights:  89%|████████▉ | 459/515 [00:00<00:00, 4531.56it/s]Loading weights: 100%|██████████| 515/515 [00:00<00:00, 4258.13it/s]
+[1mEsmModel LOAD REPORT[0m from: facebook/esm2_t30_150M_UR50D
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.bias                | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+esm.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+pooler.dense.weight         | MISSING    | 
+pooler.dense.bias           | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{
+  "status": "passed",
+  "motif_shape": [
+    2,
+    16384
+  ],
+  "binding_shape": [
+    32
+  ],
+  "device": "cuda"
+}

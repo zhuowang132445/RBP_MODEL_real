@@ -1,0 +1,4 @@
+rbp_id	motif_group_conflict	conflict_groups	best_uc_window	best_uc_score	best_g_window	best_g_score	n_conflict_eligible_windows
+AtGRP7	0	G-rich			AtGRP7|full	1.0	1
+AtGRP8	0	G-rich			AtGRP8|full	1.0	1
+LOC_Os05g24160.1	0	UC-rich	LOC_Os05g24160.1|1-256	1.0			5

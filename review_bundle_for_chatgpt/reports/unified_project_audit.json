@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "errors": [],
+  "warnings": [
+    "base_binding_logit nearly all zero for: {'LOC_Os05g24160.1': 1.0}"
+  ],
+  "stage1_rows": 202150,
+  "stage1_rbps": {
+    "AtGRP7": 165921,
+    "AtGRP8": 34712,
+    "LOC_Os05g24160.1": 1517
+  },
+  "feature_dim": 21,
+  "rbp_feature_count": 17,
+  "base_binding_logit_zero_fraction_by_rbp": {
+    "AtGRP7": 0.0,
+    "AtGRP8": 0.0,
+    "LOC_Os05g24160.1": 1.0
+  }
+}
