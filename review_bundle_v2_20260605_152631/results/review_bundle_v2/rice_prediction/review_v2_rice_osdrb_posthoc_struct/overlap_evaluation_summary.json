@@ -1,0 +1,70 @@
+{
+  "rbp_id": "LOC_Os05g24160.1",
+  "window_scores": "results/review_v2_rice_osdrb_posthoc_struct/window_scores.tsv.gz",
+  "truth_gene_list": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/11_rice_prediction/validation_tribe_osdrb1/results/tribe_msu_genes.tsv",
+  "score_reports": [
+    {
+      "score_name": "base_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_base_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "inverted_base_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_inverted_base_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "motif_only_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_motif_only_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "structure_only_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_structure_only_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "motif_structure_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_motif_structure_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "base_motif_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_base_motif_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "inverted_base_motif_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_inverted_base_motif_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "base_motif_structure_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_base_motif_structure_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "inverted_base_motif_structure_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_inverted_base_motif_structure_score.tsv",
+      "n_genes": 55382
+    },
+    {
+      "score_name": "posthoc_score",
+      "gene_scores_tsv": "results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_posthoc_score.tsv",
+      "n_genes": 55382
+    }
+  ],
+  "best_overlap_record": {
+    "score_name": "inverted_base_motif_structure_score",
+    "aggregation": "top3_mean_score",
+    "top_k": 1000,
+    "universe_genes": 55382,
+    "comparable_truth_genes": 283,
+    "overlap": 48,
+    "precision": 0.048,
+    "recall": 0.1696113074204947,
+    "expected_random": 5.109963526055397,
+    "fold_enrichment": 9.393413427561837,
+    "hypergeom_pvalue": 7.037724790867853e-32
+  }
+}

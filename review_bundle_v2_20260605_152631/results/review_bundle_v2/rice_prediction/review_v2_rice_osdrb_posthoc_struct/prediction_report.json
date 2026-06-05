@@ -1,0 +1,51 @@
+{
+  "prediction_mode": "posthoc",
+  "checkpoint": null,
+  "motif_checkpoint": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/checkpoints/unified_original_logic_model_motif.pt",
+  "binding_checkpoint": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/checkpoints/unified_original_logic_model_binding.pt",
+  "checkpoint_stage": "binding",
+  "checkpoint_binding_score_mode": "base",
+  "device": "cuda",
+  "query_rbp_ids": [
+    "LOC_Os05g24160.1"
+  ],
+  "resolved_query_kingdoms": {
+    "LOC_Os05g24160.1": {
+      "resolved_kingdom_label": 1,
+      "resolved_kingdom_name": "plant",
+      "resolved_kingdom_source": "query_protein_id_prefix"
+    }
+  },
+  "use_joint_head": false,
+  "motif_alpha": 1.0,
+  "motif_top_n": 3,
+  "window_count_penalty": 0.05,
+  "window_count_adjusted_formula": "max_score - window_count_penalty * log2(n_windows + 1)",
+  "structure_alpha": 0.5,
+  "structure_score_mode": "combined",
+  "structure_features_npy": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/structure_cache/transcriptome.paired_probability.npy",
+  "structure_meta_json": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/structure_cache/transcriptome.structure_meta.json",
+  "motif_profile_mode": "auto_teacher",
+  "override_motif_profile_csv": null,
+  "motif_top_kmers_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/motif_top_kmers.tsv",
+  "motif_summary_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/motif_summary.tsv",
+  "auto_teacher_fused_z_matrix_csv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/auto_teacher_fused_z_matrix.csv",
+  "auto_teacher_selected_windows_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/auto_teacher_selected_windows.csv",
+  "auto_teacher_conflicts_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/auto_teacher_conflicts.tsv",
+  "auto_teacher_summary_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/auto_teacher_summary.tsv",
+  "auto_teacher_conflict_candidate_z_matrix_csv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/auto_teacher_conflict_candidate_z_matrix.csv",
+  "auto_teacher_conflict_candidate_windows_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/auto_teacher_conflict_candidate_windows.csv",
+  "resolved_structure_rows": 2099265,
+  "resolved_structure_rna_len": 200,
+  "resolved_structure_method": "viennarna_rnafold_pf_paired_probability",
+  "window_scores_tsv_gz": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/window_scores.tsv.gz",
+  "gene_scores_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_scores.tsv",
+  "gene_ranking_correlations_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_ranking_correlations.tsv",
+  "gene_scores_by_max_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_max.tsv",
+  "gene_scores_by_top3_mean_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_top3_mean.tsv",
+  "gene_scores_by_top5_mean_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_top5_mean.tsv",
+  "gene_scores_by_top10_mean_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_top10_mean.tsv",
+  "gene_scores_by_top5_percent_mean_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_top5_percent_mean.tsv",
+  "gene_scores_by_window_count_adjusted_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_window_count_adjusted.tsv",
+  "window_input_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/input/rice_v7_windows_w200_s50.tsv.gz"
+}

@@ -1,0 +1,17 @@
+{
+  "rbp_id": "LOC_Os05g24160.1",
+  "score_name": "inverted_base_motif_structure_score",
+  "aggregation": "top3_mean_score",
+  "top_k": 1000,
+  "n_gene_scores": 55382,
+  "n_truth_genes_total": 284,
+  "top_k_true_positive_count": 48,
+  "top_k_false_positive_count": 952,
+  "true_targets_outside_top_k_count": 235,
+  "best_overlap_record": {
+    "score_name": "inverted_base_motif_structure_score",
+    "aggregation": "top3_mean_score",
+    "top_k": 1000,
+    "overlap": 48
+  }
+}

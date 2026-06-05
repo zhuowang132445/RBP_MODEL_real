@@ -1,0 +1,6 @@
+review_bundle_v2 contains only minimal reruns with repaired code:
+- motif baseline direct
+- motif baseline auto_teacher
+- rice OsDRB1 transcriptome prediction
+- gene-score overlap evaluation
+- false-positive audit

@@ -1,0 +1,10 @@
+{
+  "stage": "late_fusion",
+  "train_binding_backbone": false,
+  "train_binding_protein_embedding": false,
+  "train_motif_non_esm": false,
+  "n_modules": 26,
+  "n_trainable_modules": 2,
+  "trainable_parameter_total": 191873,
+  "frozen_parameter_total": 153562856
+}

@@ -1,0 +1,44 @@
+{
+  "prediction_mode": "single",
+  "checkpoint": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/checkpoints/unified_original_logic_model_motif.pt",
+  "motif_checkpoint": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/checkpoints/unified_original_logic_model_motif.pt",
+  "binding_checkpoint": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/checkpoints/unified_original_logic_model_motif.pt",
+  "checkpoint_stage": "motif",
+  "checkpoint_binding_score_mode": null,
+  "device": "cuda",
+  "query_rbp_ids": [
+    "AtGRP7",
+    "AtGRP8",
+    "LOC_Os05g24160.1"
+  ],
+  "resolved_query_kingdoms": {
+    "AtGRP7": {
+      "resolved_kingdom_label": 1,
+      "resolved_kingdom_name": "plant",
+      "resolved_kingdom_source": "query_protein_id_prefix"
+    },
+    "AtGRP8": {
+      "resolved_kingdom_label": 1,
+      "resolved_kingdom_name": "plant",
+      "resolved_kingdom_source": "query_protein_id_prefix"
+    },
+    "LOC_Os05g24160.1": {
+      "resolved_kingdom_label": 1,
+      "resolved_kingdom_name": "plant",
+      "resolved_kingdom_source": "query_protein_id_prefix"
+    }
+  },
+  "use_joint_head": false,
+  "motif_alpha": 1.0,
+  "motif_top_n": 3,
+  "window_count_penalty": 0.05,
+  "window_count_adjusted_formula": "max_score - window_count_penalty * log2(n_windows + 1)",
+  "structure_alpha": 0.0,
+  "structure_score_mode": "combined",
+  "structure_features_npy": null,
+  "structure_meta_json": null,
+  "motif_profile_mode": "direct",
+  "override_motif_profile_csv": null,
+  "motif_top_kmers_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_motif_direct/motif_top_kmers.tsv",
+  "motif_summary_tsv": "/public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_motif_direct/motif_summary.tsv"
+}

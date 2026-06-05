@@ -1,0 +1,7 @@
+rbp_id	ranking_name	score_column	n_genes	pearson_n_windows_vs_score	spearman_n_windows_vs_score
+LOC_Os05g24160.1	max	max_score	55382	0.3298270842643104	0.5316319826874004
+LOC_Os05g24160.1	top3_mean	top3_mean_score	55382	0.37183157184852034	0.6089334708130368
+LOC_Os05g24160.1	top5_mean	top5_mean_score	55382	0.40454362534003435	0.6606976574302628
+LOC_Os05g24160.1	top10_mean	top10_mean_score	55382	0.4516760887975615	0.6949184622519029
+LOC_Os05g24160.1	top5_percent_mean	top5_percent_mean_score	55382	0.273232455152163	0.40310800806060315
+LOC_Os05g24160.1	window_count_adjusted	window_count_adjusted_score	55382	-0.43379872952496284	-0.5915257401957871

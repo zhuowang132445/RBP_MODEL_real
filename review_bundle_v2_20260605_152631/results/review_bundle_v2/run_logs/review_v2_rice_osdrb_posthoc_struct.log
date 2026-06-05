@@ -1,0 +1,36 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/515 [00:00<?, ?it/s]Loading weights:  76%|███████▌  | 390/515 [00:00<00:00, 3856.52it/s]Loading weights: 100%|██████████| 515/515 [00:00<00:00, 3569.97it/s]
+[1mEsmModel LOAD REPORT[0m from: facebook/esm2_t30_150M_UR50D
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.dense.weight        | UNEXPECTED | 
+esm.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+pooler.dense.bias           | MISSING    | 
+pooler.dense.weight         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading weights:   0%|          | 0/515 [00:00<?, ?it/s]Loading weights:  71%|███████▏  | 367/515 [00:00<00:00, 3606.57it/s]Loading weights: 100%|██████████| 515/515 [00:00<00:00, 3341.26it/s]
+[1mEsmModel LOAD REPORT[0m from: facebook/esm2_t30_150M_UR50D
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.dense.weight        | UNEXPECTED | 
+esm.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+pooler.dense.bias           | MISSING    | 
+pooler.dense.weight         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[Dataset] 加载模式: FASTA + Z-score 矩阵
+[Dataset] 检测到 696 个非有限标签值，将在 train.py 划分后用训练集统计量填充
+✅ 数据载入完成：348 样本 | FASTA记录: 348

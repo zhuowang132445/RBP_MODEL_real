@@ -1,0 +1,14 @@
+rbp_id	motif_label	probe_kmer	direction	rank	predicted_zscore
+AtGRP7	U-rich_probe	UUUUUUU			
+AtGRP7	U-rich_probe	UUUGAUU			
+AtGRP7	G-rich_probe	UAGGUAG			
+AtGRP7	G-rich_probe	AGUAGGA	positive	4	2.5449812412261963
+AtGRP8	U-rich_probe	UUUUUUU			
+AtGRP8	U-rich_probe	UUUGAUU			
+AtGRP8	G-rich_probe	UAGGUAG	positive	25	2.109835386276245
+AtGRP8	G-rich_probe	AGUAGGA	positive	5	2.5909528732299805
+LOC_Os05g24160.1	UC-rich_probe	UUUCUCU			
+LOC_Os05g24160.1	UC-rich_probe	UCUCUCU			
+LOC_Os05g24160.1	UC-rich_probe	CUCUUCU			
+LOC_Os05g24160.1	G-rich_probe	UAGGUAG			
+LOC_Os05g24160.1	G-rich_probe	AGUAGGA			
