@@ -1,0 +1,24 @@
+{
+  "truth_gene_list": "/public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/11_rice_prediction/validation_tribe_osdrb1/results/tribe_msu_genes.tsv",
+  "comparable_truth_genes": 283,
+  "candidate_scores": [
+    "base_score",
+    "inverted_base_score",
+    "motif_only_score",
+    "structure_only_score",
+    "motif_structure_score",
+    "base_motif_structure_score",
+    "inverted_base_motif_structure_score"
+  ],
+  "candidate_aggregations": [
+    "max_score",
+    "top3_mean_score",
+    "top5_mean_score",
+    "top10_mean_score",
+    "top5_percent_mean_score"
+  ],
+  "selection_rule": "min calibration Top1000 hypergeom_pvalue; tie-break by Top1000 overlap, fold_enrichment, then Top500 overlap/pvalue",
+  "n_seeds": 10,
+  "bin_adjust_score_name": "inverted_base_motif_structure_score",
+  "bin_adjust_aggregation": "top3_mean_score"
+}
