@@ -1,0 +1,26 @@
+label	seed	top_k	universe_genes	truth_genes	overlap	precision	recall	expected_random	fold_enrichment	hypergeom_pvalue	score_family	selected_candidate
+baseline_score_oracle		50	55382	283	4	0.08	0.014134275618374558	0.25549817630276983	15.655689045936397	0.00012775212668203554	baseline_score	
+baseline_score_oracle		100	55382	283	8	0.08	0.028268551236749116	0.5109963526055397	15.655689045936397	5.217754481474298e-08	baseline_score	
+baseline_score_oracle		200	55382	283	16	0.08	0.05653710247349823	1.0219927052110793	15.655689045936397	1.029793422698481e-14	baseline_score	
+baseline_score_oracle		500	55382	283	28	0.056	0.0989399293286219	2.5549817630276985	10.958982332155477	1.1884176030787299e-20	baseline_score	
+baseline_score_oracle		1000	55382	283	48	0.048	0.1696113074204947	5.109963526055397	9.393413427561837	7.037724790867853e-32	baseline_score	
+rbp_trace_v2_score_region_oracle		50	55382	283	4	0.08	0.014134275618374558	0.25549817630276983	15.655689045936397	0.00012775212668203554	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1
+rbp_trace_v2_score_region_oracle		100	55382	283	7	0.07	0.024734982332155476	0.5109963526055397	13.698727915194347	9.012753656072744e-07	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1
+rbp_trace_v2_score_region_oracle		200	55382	283	14	0.07	0.04946996466431095	1.0219927052110793	13.698727915194347	3.030117683160773e-12	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1
+rbp_trace_v2_score_region_oracle		500	55382	283	31	0.062	0.10954063604240283	2.5549817630276985	12.133159010600707	4.586586985404742e-24	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1
+rbp_trace_v2_score_region_oracle		1000	55382	283	52	0.052	0.18374558303886926	5.109963526055397	10.176197879858657	3.030298368213331e-36	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1
+rbp_trace_v2_score_repeat_oracle		50	55382	283	1	0.02	0.0035335689045936395	0.25549817630276983	3.913922261484099	0.22606460519294055	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1
+rbp_trace_v2_score_repeat_oracle		100	55382	283	5	0.05	0.0176678445229682	0.5109963526055397	9.784805653710249	0.00017036480270641945	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1
+rbp_trace_v2_score_repeat_oracle		200	55382	283	10	0.05	0.0353356890459364	1.0219927052110793	9.784805653710249	9.909349489485255e-08	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1
+rbp_trace_v2_score_repeat_oracle		500	55382	283	30	0.06	0.10600706713780919	2.5549817630276985	11.741766784452297	6.550458281301019e-23	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1
+rbp_trace_v2_score_repeat_oracle		1000	55382	283	54	0.054	0.19081272084805653	5.109963526055397	10.567590106007067	1.7155809171456123e-38	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1
+rbp_trace_v2_score_hairpin_oracle		50	55382	283	6	0.12	0.02120141342756184	0.25549817630276983	23.483533568904594	2.2213822812605664e-07	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5
+rbp_trace_v2_score_hairpin_oracle		100	55382	283	19	0.19	0.06713780918727916	0.5109963526055397	37.182261484098944	1.4285230112888467e-24	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5
+rbp_trace_v2_score_hairpin_oracle		200	55382	283	24	0.12	0.08480565371024736	1.0219927052110793	23.483533568904594	1.0758416336875782e-25	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5
+rbp_trace_v2_score_hairpin_oracle		500	55382	283	34	0.068	0.12014134275618374	2.5549817630276985	13.307335689045937	1.2605586678409563e-27	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5
+rbp_trace_v2_score_hairpin_oracle		1000	55382	283	41	0.041	0.14487632508833923	5.109963526055397	8.023540636042403	1.1176845373791214e-24	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5
+rbp_trace_v2_score_all_context_oracle		50	55382	283	5	0.1	0.0176678445229682	0.25549817630276983	19.569611307420498	5.903141865067836e-06	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5
+rbp_trace_v2_score_all_context_oracle		100	55382	283	16	0.16	0.05653710247349823	0.5109963526055397	31.311378091872793	1.2913794301838538e-19	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5
+rbp_trace_v2_score_all_context_oracle		200	55382	283	25	0.125	0.08833922261484099	1.0219927052110793	24.46201413427562	3.565757392670656e-27	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5
+rbp_trace_v2_score_all_context_oracle		500	55382	283	35	0.07	0.12367491166077739	2.5549817630276985	13.698727915194347	7.632663415035142e-29	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5
+rbp_trace_v2_score_all_context_oracle		1000	55382	283	50	0.05	0.17667844522968199	5.109963526055397	9.784805653710247	4.855502886949398e-34	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5

@@ -1,0 +1,23 @@
+project_name: RBP-TRACE
+results_root: /public/home/wz/workplace/cursor/modle/RBP_TRACE_V2/results
+random_seed: 20260605
+n_splits: 10
+calibration_fraction: 0.7
+top_ks: [50, 100, 200, 500, 1000]
+context_betas: [0, 0.1, 0.25, 0.5, 1.0]
+baseline:
+  score_name: inverted_base_motif_structure_score
+  aggregation: top3_mean_score
+optional_modules:
+  enable_region: false
+  enable_repeat: false
+  enable_hairpin: false
+paths:
+  gene_score_table: /public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/gene_scores_by_inverted_base_motif_structure_score.tsv
+  window_score_table: /public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/results/review_v2_rice_osdrb_posthoc_struct/window_scores.tsv.gz
+  truth_gene_list: /public/home/wz/workplace/cursor/RBP_clip_data/MuSIC_data/11_rice_prediction/validation_tribe_osdrb1/results/tribe_msu_genes.tsv
+  window_table: /public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/input/rice_v7_windows_w200_s50.tsv.gz
+  structure_npy: /public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/structure_cache/transcriptome.paired_probability.npy
+  annotation_gtf: /public/home/wz/workplace/cursor/modle/unified_rbp_model_v1/data/prediction_assets/rice_v7/annotation/rice_all_genomes_v7.gtf
+  repeat_annotation: ""
+  transcript_gene_map: ""

@@ -1,0 +1,7 @@
+summary_label	candidate_name	family	module_variant	region_mode	top_window_k	beta_region	beta_repeat	beta_hairpin	top200_overlap	top200_precision	top200_recall	top200_fold_enrichment	top200_hypergeom_pvalue
+baseline	baseline_score	baseline			3				16	0.08	0.05653710247349823	15.655689045936397	1.029793422698481e-14
+best_region	rbp_trace_v2_score_region__explicit__k_10__beta_0.25	region		explicit	10	0.25			18	0.09	0.0636042402826855	17.612650176678446	2.650852850051835e-17
+best_self_complementarity	rbp_trace_v2_score_repeat__self_complementarity__k_3__beta_0.0	self_complementarity	self_complementarity		3		0.0		16	0.08	0.05653710247349823	15.655689045936397	1.029793422698481e-14
+best_paired_architecture	rbp_trace_v2_score_paired_architecture__k_10__beta_0.25	paired_architecture	paired_architecture		10			0.25	27	0.135	0.09540636042402827	26.41897526501767	3.3896012425264665e-30
+best_all_context	rbp_trace_v2_score_all_context__k_20__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.25__repeat_self_complementarity_minus_simple_repeat_penalty	all_context	self_complementarity_minus_simple_repeat_penalty	inferred	20	0.5	0.1	0.25	31	0.155	0.10954063604240283	30.33289752650177	1.780904068851733e-36
+best_overall	rbp_trace_v2_score_all_context__k_20__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.25__repeat_self_complementarity_minus_simple_repeat_penalty	all_context	self_complementarity_minus_simple_repeat_penalty	inferred	20	0.5	0.1	0.25	31	0.155	0.10954063604240283	30.33289752650177	1.780904068851733e-36

@@ -1,0 +1,23 @@
+project_name: RBP-TRACE
+results_root: results
+random_seed: 20260605
+n_splits: 10
+calibration_fraction: 0.7
+top_ks: [50, 100, 200, 500, 1000]
+context_betas: [0, 0.1, 0.25, 0.5, 1.0]
+baseline:
+  score_name: inverted_base_motif_structure_score
+  aggregation: top3_mean_score
+optional_modules:
+  enable_region: false
+  enable_repeat: false
+  enable_hairpin: false
+paths:
+  gene_score_table: ""
+  window_score_table: ""
+  truth_gene_list: ""
+  window_table: ""
+  structure_npy: ""
+  annotation_gtf: ""
+  repeat_annotation: ""
+  transcript_gene_map: ""

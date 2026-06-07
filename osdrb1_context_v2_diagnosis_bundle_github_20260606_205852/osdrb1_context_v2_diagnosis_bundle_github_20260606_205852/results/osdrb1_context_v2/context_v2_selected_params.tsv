@@ -1,0 +1,51 @@
+seed	score_family	selected_candidate	selected_beta	beta_region	beta_repeat	beta_hairpin
+336362904	baseline_score	baseline_score				
+1989451307	baseline_score	baseline_score				
+1289457136	baseline_score	baseline_score				
+1889382247	baseline_score	baseline_score				
+800250632	baseline_score	baseline_score				
+1539420525	baseline_score	baseline_score				
+1778277625	baseline_score	baseline_score				
+1624446027	baseline_score	baseline_score				
+1797759645	baseline_score	baseline_score				
+748698052	baseline_score	baseline_score				
+336362904	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+336362904	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+336362904	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5	0.5			
+336362904	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5		0.5	0.1	0.5
+1989451307	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+1989451307	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+1989451307	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5	0.5			
+1989451307	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_1.0__beta_repeat_0.1__beta_hairpin_1.0		1.0	0.1	1.0
+1289457136	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+1289457136	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+1289457136	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5	0.5			
+1289457136	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5		0.5	0.1	0.5
+1889382247	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+1889382247	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+1889382247	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5	0.5			
+1889382247	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5		0.5	0.1	0.5
+800250632	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+800250632	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+800250632	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.25	0.25			
+800250632	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_1.0__beta_repeat_0.1__beta_hairpin_1.0		1.0	0.1	1.0
+1539420525	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+1539420525	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+1539420525	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.1	0.1			
+1539420525	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_1.0__beta_repeat_0.1__beta_hairpin_0.25		1.0	0.1	0.25
+1778277625	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+1778277625	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+1778277625	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5	0.5			
+1778277625	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_1.0__beta_repeat_0.25__beta_hairpin_1.0		1.0	0.25	1.0
+1624446027	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+1624446027	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+1624446027	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5	0.5			
+1624446027	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5		0.5	0.1	0.5
+1797759645	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+1797759645	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+1797759645	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5	0.5			
+1797759645	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_1.0__beta_repeat_0.1__beta_hairpin_1.0		1.0	0.1	1.0
+748698052	rbp_trace_v2_score_region	rbp_trace_v2_score_region__beta_0.1	0.1			
+748698052	rbp_trace_v2_score_repeat	rbp_trace_v2_score_repeat__beta_0.1	0.1			
+748698052	rbp_trace_v2_score_hairpin	rbp_trace_v2_score_hairpin__beta_0.5	0.5			
+748698052	rbp_trace_v2_score_all_context	rbp_trace_v2_score_all_context__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.5		0.5	0.1	0.5

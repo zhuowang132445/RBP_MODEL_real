@@ -1,0 +1,13 @@
+top_window_k	family	best_candidate_name	module_variant	region_mode	beta_region	beta_repeat	beta_hairpin	top200_overlap	top200_precision	top200_fold_enrichment	top200_hypergeom_pvalue
+3	region	rbp_trace_v2_score_region__explicit__k_3__beta_0.0		explicit	0.0			16	0.08	15.655689045936397	1.029793422698481e-14
+3	self_complementarity	rbp_trace_v2_score_repeat__self_complementarity__k_3__beta_0.0	self_complementarity			0.0		16	0.08	15.655689045936397	1.029793422698481e-14
+3	paired_architecture	rbp_trace_v2_score_paired_architecture__k_3__beta_0.25	paired_architecture				0.25	26	0.13	25.440494699646646	1.1256751719621933e-28
+3	all_context	rbp_trace_v2_score_all_context__k_3__beta_region_0.25__beta_repeat_0.1__beta_hairpin_0.25__repeat_minus_simple_repeat_penalty	minus_simple_repeat_penalty	inferred	0.25	0.1	0.25	27	0.135	26.41897526501767	3.3896012425264665e-30
+10	region	rbp_trace_v2_score_region__explicit__k_10__beta_0.25		explicit	0.25			18	0.09	17.612650176678446	2.650852850051835e-17
+10	self_complementarity	rbp_trace_v2_score_repeat__self_complementarity__k_10__beta_0.0	self_complementarity			0.0		16	0.08	15.655689045936397	1.029793422698481e-14
+10	paired_architecture	rbp_trace_v2_score_paired_architecture__k_10__beta_0.25	paired_architecture				0.25	27	0.135	26.41897526501767	3.3896012425264665e-30
+10	all_context	rbp_trace_v2_score_all_context__k_10__beta_region_0.25__beta_repeat_0.0__beta_hairpin_0.1__repeat_self_complementarity	self_complementarity	inferred	0.25	0.0	0.1	29	0.145	28.37593639575972	2.680907061586602e-33
+20	region	rbp_trace_v2_score_region__explicit__k_20__beta_0.1		explicit	0.1			18	0.09	17.612650176678446	2.650852850051835e-17
+20	self_complementarity	rbp_trace_v2_score_repeat__self_complementarity__k_20__beta_0.0	self_complementarity			0.0		16	0.08	15.655689045936397	1.029793422698481e-14
+20	paired_architecture	rbp_trace_v2_score_paired_architecture__k_20__beta_0.1	paired_architecture				0.1	20	0.1	19.569611307420498	5.3018903837888666e-20
+20	all_context	rbp_trace_v2_score_all_context__k_20__beta_region_0.5__beta_repeat_0.1__beta_hairpin_0.25__repeat_self_complementarity_minus_simple_repeat_penalty	self_complementarity_minus_simple_repeat_penalty	inferred	0.5	0.1	0.25	31	0.155	30.33289752650177	1.780904068851733e-36
